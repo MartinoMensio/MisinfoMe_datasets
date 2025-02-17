@@ -1,4 +1,4 @@
-FROM python:3.11-alpine as base
+FROM python:3.13.0b1-alpine as base
 # move to edge, removes a lot of vulnerabilities
 RUN sed -i -e 's/v[^/]*/edge/g' /etc/apk/repositories && \
     apk update && \
